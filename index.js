@@ -3,20 +3,20 @@
 let hStandPoint = 0;
 let vStandPoint = 0;
 function goUp() {
-  hStandPoint -= 10;
-  mini.style.top - hStandPoint + "px";
+  vStandPoint -= 10;
+  mini.style.top = vStandPoint + "px";
 }
 function goDown() {
-  hStandPoint += 10;
-  mini.style.top - hStandPoint + "px";
+  vStandPoint += 10;
+  mini.style.top = vStandPoint + "px";
 }
 function goRight() {
-  vStandPoint += 10;
-  mini.style.left - vStandPoint + "px";
+  hStandPoint += 10;
+  mini.style.left = hStandPoint + "px";
 }
 function goLeft() {
-  vStandPoint -= 10;
-  mini.style.right - vStandPoint + "px";
+  hStandPoint -= 10;
+  mini.style.right = hStandPoint + "px";
 }
 
 function move(e) {
